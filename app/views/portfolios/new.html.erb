@@ -1,0 +1,14 @@
+<h1>Create a new Portfolio Item</h1>
+
+<%= form_for(@portfolio_item) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :subtitle %>
+  <%= f.text_field :subtitle %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.submit %>
+<% end %>
